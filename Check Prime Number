@@ -1,0 +1,10 @@
+//function to check a number if Prime number or not
+bool CheckPrimeNumber(int Num) {
+
+
+	for (int i = Num - 1; i > 1; i--) {
+		if (Num % i == 0) return false;
+
+	}
+	return true;
+}
