@@ -1,0 +1,12 @@
+// function to check a number if perfect number or not
+
+bool CheckPerfectNumber(int Num) {
+
+	int counter = 0;
+	for (int i = Num - 1; i > 0; i--) {
+		if (Num % i == 0) counter += i ;
+
+	}
+	if (Num == counter) return true;
+	else return false;
+}
